@@ -1,0 +1,21 @@
+money = float(input())
+sum_coins = money * 100
+amount = int(sum_coins)
+coins = 0
+coins += amount // 200
+amount %= 200
+coins += amount // 100
+amount %= 100
+coins += amount // 50
+amount %= 50
+coins += amount // 20
+amount %= 20
+coins += amount // 10
+amount %= 10
+coins += amount // 5
+amount %= 5
+coins += amount // 2
+amount %= 2
+coins += amount // 1
+amount %= 1
+print(coins)
